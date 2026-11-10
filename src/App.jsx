@@ -1,3 +1,4 @@
+
 import { useState } from 'react'
 import './App.css'
 import logo from './assets/images/logo.png'
@@ -107,10 +108,10 @@ function App() {
         <button
           className="menu-toggle"
           onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle navigation"
+          aria-label="Toggle navigation menu"
           aria-expanded={menuOpen}
         >
-          {menuOpen ? '✕' : '☰'}
+          {menuOpen ? 'Close' : 'Menu'}
         </button>
 
         <nav className={menuOpen ? 'nav-links open' : 'nav-links'}>
@@ -126,7 +127,7 @@ function App() {
             className="nav-cta"
             onClick={closeMenu}
           >
-            Let's Talk <span>↗</span>
+            Let's Talk
           </a>
         </nav>
       </header>
@@ -135,7 +136,6 @@ function App() {
       <section className="hero" id="home">
         <div className="hero-content">
           <div className="eyebrow">
-            <span className="eyebrow-dot"></span>
             TECHNOLOGY · INNOVATION · GROWTH
           </div>
 
@@ -150,7 +150,7 @@ function App() {
 
           <div className="hero-actions">
             <a href="#services" className="button button-primary">
-              Explore our services <span>↗</span>
+              Explore our services
             </a>
 
             <a href="#about" className="button button-outline">
@@ -238,7 +238,7 @@ function App() {
             </p>
 
             <a href="#contact" className="text-link">
-              Work with us <span>↗</span>
+              Work with us
             </a>
           </div>
         </div>
@@ -282,7 +282,6 @@ function App() {
             <article className="service-card" key={service.number}>
               <div className="service-top">
                 <span>{service.number}</span>
-                <span className="service-arrow">↗</span>
               </div>
 
               <h3>{service.title}</h3>
@@ -334,15 +333,12 @@ function App() {
 
               <div className="product-features">
                 {product.features.map((feature) => (
-                  <span key={feature}>
-                    <b>✓</b> {feature}
-                  </span>
+                  <span key={feature}>{feature}</span>
                 ))}
               </div>
 
               <div className="product-card-footer">
                 <span>BY TECH SOLVE</span>
-                <span>↗</span>
               </div>
             </article>
           ))}
@@ -410,7 +406,7 @@ function App() {
             how well it works for the people using it.
           </p>
           <a href="#contact" className="button button-light">
-            Let's build something <span>↗</span>
+            Let's build something
           </a>
         </div>
 
@@ -451,7 +447,7 @@ function App() {
             rel="noreferrer"
             className="button button-primary"
           >
-            Start a conversation <span>↗</span>
+            Start a conversation
           </a>
         </div>
 
@@ -464,7 +460,7 @@ function App() {
           <div>
             <span>EMAIL</span>
             <a href="mailto:iptihajf142@gmail.com">
-              iptihajf142@gmail.com
+              iptihajjf142@gmail.com
             </a>
           </div>
 
@@ -491,7 +487,7 @@ function App() {
             rel="noreferrer"
             className="footer-contact"
           >
-            Get in touch ↗
+            Get in touch
           </a>
         </div>
 
